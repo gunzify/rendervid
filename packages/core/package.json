@@ -1,0 +1,43 @@
+{
+  "name": "@rendervid/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./db": "./src/db/index.ts",
+    "./jobs": "./src/jobs/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit",
+    "test": "vitest run",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:seed": "tsx src/seed/seed.ts",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@rendervid/shared": "workspace:*",
+    "@aws-sdk/client-s3": "^3.682.0",
+    "@aws-sdk/s3-request-presigner": "^3.682.0",
+    "bullmq": "^5.21.2",
+    "drizzle-orm": "^0.36.4",
+    "ioredis": "^5.4.1",
+    "jose": "^5.9.6",
+    "postgres": "^3.4.5",
+    "stripe": "^17.3.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "dotenv": "^16.4.5",
+    "drizzle-kit": "^0.28.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2",
+    "vitest": "^2.1.5"
+  },
+  "dependenciesMeta": {}
+}

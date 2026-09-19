@@ -1,0 +1,21 @@
+{
+  "name": "rendervid",
+  "private": true,
+  "packageManager": "pnpm@10.17.1",
+  "engines": { "node": ">=20" },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "msgpackr-extract"]
+  },
+  "scripts": {
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "dev:web": "pnpm --filter @rendervid/web dev",
+    "dev:worker": "pnpm --filter @rendervid/worker dev",
+    "dev:mobile": "pnpm --filter @rendervid/mobile start",
+    "db:generate": "pnpm --filter @rendervid/core db:generate",
+    "db:push": "pnpm --filter @rendervid/core db:push",
+    "db:seed": "pnpm --filter @rendervid/core db:seed",
+    "db:studio": "pnpm --filter @rendervid/core db:studio"
+  }
+}

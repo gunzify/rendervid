@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(232, 255, 84, 0.25);
+}
+
+/* Thin, quiet scrollbars for the media-heavy UI */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2a2a30;
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}

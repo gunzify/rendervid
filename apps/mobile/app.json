@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "RenderVid",
+    "slug": "rendervid",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "rendervid",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "bundleIdentifier": "ai.rendervid.app",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "RenderVid saves your creations to your photo library when you tap Save.",
+        "NSCameraUsageDescription": "Attach a photo of your product to create content.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "platforms": ["ios", "android"],
+    "splash": {
+      "backgroundColor": "#0a0a0b",
+      "resizeMode": "contain"
+    }
+  }
+}
